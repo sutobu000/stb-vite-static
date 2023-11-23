@@ -1,0 +1,40 @@
+extends _includes/_layout
+block vars
+  - var _title_str = '株式会社'; // タイトルタグ
+  - var _desc_str = 'でぃすくりぷしょん'; // descriptions
+  - var _keys_str = 'きーわーど'; // keywords
+  - var _page_category = 'top'; // ページのカテゴリー
+  - var _page_id = _page_category + '-page'; // ページカテゴリーの後ろに付与してIDとして使う
+  - var DIR_IMG_PAGE = "/img/" + _page_category + "/"; // イメージへのリンク
+  //- var DIR_CSS = "/css/"; // cssのリンク
+  //- var DIR_JS = "/js/"; // jsのリンク
+  - var _page_name = ''; // ページ名
+
+block link
+  link(rel='stylesheet', href=DIR_CSS + _page_category + ".css")
+block body
+  #app
+  section.mainVisual
+    .mainVisual__inner
+      .mainVisual__node
+        h1.mainVisual__node__title.js-sliSL: span Corporation
+
+  section.section.section-lead
+    .section__inner
+      h2.section__lead.js-sliSL: p.section__lead__txt
+        | Be beans, Be Nuts
+
+  section.section.section-content
+    .section__inner
+      .section__lists.js-staggerSlide
+        - for (var i = 0; i < 9; i++) {
+          .section__item: a.js-hover(href="")
+            .section__item__inner
+              .section__item__visual: img(src="https://placehold.jp/300x150.png", alt="test")
+              p.section__item__content dummy dummy dummy dummy dummy dummy dummy dummy
+        - }
+
+
+block script
+  //- ページ固有のjs
+  script(src="/main.ts" type="module")
