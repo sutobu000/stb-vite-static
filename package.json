@@ -9,11 +9,11 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/node": "^20.6.3",
-    "@types/pug": "^2.0.6",
-    "pug": "^3.0.2",
-    "sass": "^1.68.0",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "@types/node": "^22.10.5",
+    "@types/pug": "^2.0.10",
+    "pug": "^3.0.3",
+    "sass": "^1.83.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7"
   }
 }
